@@ -1,0 +1,163 @@
+.team {
+    margin-bottom: 168px;
+
+}
+
+.team-container {
+    max-width: 1369px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    gap: 120px;
+    margin-bottom: 120px;
+}
+
+.client-photo {
+    position: relative;
+    top: 222px;
+    left: 50px;
+}
+
+.case-card {
+    width: 296px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    box-shadow: 4px 9px 30px 0px rgba(34, 60, 80, 0.2);
+}
+
+.case-title {
+    margin-bottom: 36px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.case-card__client-photo {
+    display: block;
+    width: 57px;
+    height: 57px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+.client-name {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.spec-list-title {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.spec-list {
+    margin-bottom: 30px;
+}
+
+
+.spec-list__item {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.spec-list__item:last-child {
+    margin-bottom: 0px;
+}
+
+.team-article-title {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.team-article-subtitle {
+    color: #01996D;
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.team-article-description {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.team-button {
+    background-color: #01996D;
+    color: #fff;
+    padding: 20px 50px;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+@media (max-width: 1024px) {
+    .team-article-subtitle {
+        font-size: 35px;
+    }
+
+    .team-button {
+        padding: 15px 25px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .team-container {
+        display: block;
+        text-align: center;
+    }
+
+    .team-article-title {
+        font-size: 18px;
+    }
+
+    .team-article-subtitle {
+        font-size: 25px;
+    }
+
+    .team-article-description {
+        font-size: 18px;
+        line-height: 157%;
+        margin-bottom: 30px;
+    }    
+
+    .team-button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .client-photo {
+        display: none;
+    }
+
+    .team-container {
+        gap: 45px;
+    }
+
+    .case-card {
+        max-width: 70%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 320px) {
+    .team-article-title {
+        font-size: 17px;
+    }
+
+    .team-article-subtitle {
+        font-size: 20px;
+    }
+
+    .team-article-description {
+        font-size: 16px;
+        line-height: 157%;
+        margin-bottom: 30px;
+    }
+}

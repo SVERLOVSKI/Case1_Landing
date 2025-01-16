@@ -1,0 +1,33 @@
+
+
+.login-button {
+    margin-right: 35px;
+}
+
+.trial-button {
+    background-color: #01996D;
+    color: #fff;
+    padding: 13px 50px;
+    border-radius: 4px;
+}
+
+@media (max-width: 1024px) {
+    .trial-button {
+        display: none;
+    }
+
+    .login-button {
+        background-color: #01996D;
+        color: #ffffff;
+        padding: 10px 20px;
+        border-radius: 4px;
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .login-button {
+        display: none;
+    }
+}
