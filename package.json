@@ -2,15 +2,13 @@
   "name": "suka",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://SVERLOVSKI.github.io/testrepo",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "npm run build && gh-pages -d dist"
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "react": "^18.3.1",
