@@ -3,7 +3,7 @@ import Button from './../Button/Button'
 import './Team.css'
 import ClientPhoto from './client-photo.png'
 
-export default function Team() {
+export default function Team({onClick}) {
   return (
     <section className="team" id='case'>
         <div className="team-container">
@@ -26,7 +26,7 @@ export default function Team() {
                 <p className="team-article-description">Everyone experiences it, and in different ways.<br />
                 Let Alivio guide you, in a personalized journal experience, to<br />
                 overcome your stress.</p>
-                <Button className='team-button'>Find Your Way</Button>
+                <Button onClick={onClick} className='team-button'>Find Your Way</Button>
             </article>
         </div>
     </section>

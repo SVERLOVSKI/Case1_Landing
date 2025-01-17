@@ -1,10 +1,13 @@
-import React from 'react'
 import HeaderLogin from '../HeaderLogin/HeaderLogin'
 import Button from '../Button/Button'
 import './Header.css'
 import Logo from './Logo.svg'
+import { useState } from 'react'
 
-export default function Header() {
+
+export default function Header({ onClickLogin, onClickCall }) {
+  
+
   return (
     <header className="header">
       <div className="header-wrapper">
@@ -19,7 +22,9 @@ export default function Header() {
             </ul>
           </nav>
           <Button className='header-menu-button'>Menu</Button>
-          <HeaderLogin />
+          <HeaderLogin
+          onClickLogin={onClickLogin}
+          onClickCall={onClickCall} />
         </div>
       </div>
     </header>

@@ -2,7 +2,7 @@ import React from 'react'
 import Button from './../Button/Button'
 import './Promo.css'
 
-export default function Promo() {
+export default function Promo({onClick}) {
     return (
         <section className="promo">
             <div className="promo-contanier">
@@ -10,7 +10,7 @@ export default function Promo() {
                 <p className="promo-description">Everyone experiences stress in different ways.<br />
                     Let Alivio guide you, in a personalized journal<br />
                     experience, to overcome your stress.</p>
-                    <Button className="promo-button">Find Your Way</Button>
+                    <Button onClick={onClick} className="promo-button">Find Your Way</Button>
             </div>
         </section>
     )
