@@ -5,7 +5,7 @@ import Logo from './Logo.svg'
 import { useState } from 'react'
 
 
-export default function Header({ onClickLogin, onClickCall }) {
+export default function Header({ onClickLogin, onClickCall, onClickMenu }) {
   
 
   return (
@@ -21,7 +21,7 @@ export default function Header({ onClickLogin, onClickCall }) {
               <li className="header-navigation-list__item"><a href="#case">Pricing</a></li>
             </ul>
           </nav>
-          <Button className='header-menu-button'>Menu</Button>
+          <Button onClick={onClickMenu} className='header-menu-button'>Menu</Button>
           <HeaderLogin
           onClickLogin={onClickLogin}
           onClickCall={onClickCall} />

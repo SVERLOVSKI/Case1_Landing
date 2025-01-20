@@ -5,6 +5,7 @@
 	margin: 0px;
 	border: none;
 	font-family: 'Lato', sans-serif;
+	scroll-behavior: smooth;
 }
 
 *,

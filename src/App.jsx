@@ -8,12 +8,14 @@ import Team from './Components/Team/Team'
 import Footer from './Components/Footer/Footer'
 import LoginForm from './Components/LoginForm/LoginForm'
 import ReturnCall from './Components/ReturnCall/ReturnCall'
+import Menu from './Components/Menu/Menu'
 
 
 
 function App() {
   const [visibleLoginForm, setVisibleLoginForm] = useState(false);
-  const [visibleReturnCallForm, setVisibleReturnCallForm] = useState(false)
+  const [visibleReturnCallForm, setVisibleReturnCallForm] = useState(false);
+  const [visibleMenu, setVisibleMenu] = useState(false);
 
   function handleVisibleLoginForm() {
     setVisibleLoginForm(!visibleLoginForm);
@@ -23,11 +25,16 @@ function App() {
     setVisibleReturnCallForm(!visibleReturnCallForm);
   }
 
+  function handleVisibleMenu() {
+    setVisibleMenu(!visibleMenu);
+  }
+
   return (
     <>
         <Header 
         onClickLogin={handleVisibleLoginForm}
         onClickCall={handleVisibleReturnCallForm}
+        onClickMenu={handleVisibleMenu}
         />
         <main className="main-content">
           <Promo
@@ -46,6 +53,10 @@ function App() {
         <ReturnCall 
         visibleReturnCallForm={visibleReturnCallForm}
         onClick={handleVisibleReturnCallForm}
+        />
+        <Menu
+        visibleMenu={visibleMenu}
+        onClick={handleVisibleMenu}
         />
     </>
   )
