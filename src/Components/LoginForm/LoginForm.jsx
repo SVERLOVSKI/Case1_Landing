@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './LoginForm.css'
 import Logo from './Logo.svg'
 
-export default function LoginForm({ loginStatus, visibleLoginForm, onClick, onClickHandlerButtons }) {
+export default function LoginForm({visibleLoginForm, onClick, onClickHandlerButtons }) {
   const [status, setStatus] = useState(false);
   const [loginValue, setLoginValue] = useState('');
   const [passwordValue, setPasswordValue] = useState('');

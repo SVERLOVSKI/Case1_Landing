@@ -53,7 +53,6 @@ function App() {
         </main>
         <Footer />
         <LoginForm 
-        loginStatus={loginStatus}
         visibleLoginForm={visibleLoginForm}
         onClick={handleVisibleLoginForm}
         onClickHandlerButtons={handleChangeHeaderButtons}
@@ -63,6 +62,7 @@ function App() {
         onClick={handleVisibleReturnCallForm}
         />
         <Menu
+        loginStatus={loginStatus}
         visibleMenu={visibleMenu}
         onClick={handleVisibleMenu}
         />

@@ -31,7 +31,7 @@ export default function ReturnCall({ visibleReturnCallForm, onClick }) {
             <div className={visibleReturnCallForm === true ? 'return-form_active' : 'return-form'}>
                 <div className="return-form-content">
                     <button onClick={closeForm} className='close-returnform' type='submit'>Close</button>
-                    <p className="login-notification">Ваши данные отправлены менеджеру:)</p>
+                    <p className="return-notification">Ваши данные отправлены менеджеру:)</p>
                 </div>
             </div>
         )
