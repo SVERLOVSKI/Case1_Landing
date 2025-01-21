@@ -83,6 +83,7 @@
 @media (max-width: 425px) {
     .promo-contanier {
         margin-bottom: 40px;
+        height: 500px;
     }
 
     .promo-title {
@@ -103,7 +104,7 @@
     }
 
     .promo {
-        background-image: none;
+        /* background-image: none; */
         /* background-color: linear-gradient(0deg, rgba(255,255,255,1) 71%, rgba(0,212,255,0) 100%); */
     }
 }
@@ -111,7 +112,7 @@
 @media (max-width: 375px) {
 
     .promo-contanier {
-        height: 500px;
+        height: 470px;
         margin-bottom: 10px;
     }
 
@@ -124,11 +125,10 @@
         padding: 10px 20px;
         border-radius: 4px;
         font-size: 16px;
-        margin-bottom: 336px;
+        margin-bottom: 0px;
     }
 
-    .promo {
-        background-image: none;
-        /* background-color: linear-gradient(0deg, rgba(255,255,255,1) 71%, rgba(0,212,255,0) 100%); */
+    .promo-description {
+        margin-bottom: 20px;
     }
 }

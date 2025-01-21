@@ -16,6 +16,7 @@ function App() {
   const [visibleLoginForm, setVisibleLoginForm] = useState(false);
   const [visibleReturnCallForm, setVisibleReturnCallForm] = useState(false);
   const [visibleMenu, setVisibleMenu] = useState(false);
+  const [loginStatus, setLoginStatus] = useState(false);
 
   function handleVisibleLoginForm() {
     setVisibleLoginForm(!visibleLoginForm);
@@ -29,9 +30,14 @@ function App() {
     setVisibleMenu(!visibleMenu);
   }
 
+  function handleChangeHeaderButtons() {
+    setLoginStatus(!loginStatus)
+  }
+
   return (
     <>
-        <Header 
+        <Header
+        loginStatus={loginStatus}
         onClickLogin={handleVisibleLoginForm}
         onClickCall={handleVisibleReturnCallForm}
         onClickMenu={handleVisibleMenu}
@@ -47,8 +53,10 @@ function App() {
         </main>
         <Footer />
         <LoginForm 
+        loginStatus={loginStatus}
         visibleLoginForm={visibleLoginForm}
         onClick={handleVisibleLoginForm}
+        onClickHandlerButtons={handleChangeHeaderButtons}
         />
         <ReturnCall 
         visibleReturnCallForm={visibleReturnCallForm}

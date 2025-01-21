@@ -5,7 +5,7 @@ import Logo from './Logo.svg'
 import { useState } from 'react'
 
 
-export default function Header({ onClickLogin, onClickCall, onClickMenu }) {
+export default function Header({ loginStatus, onClickLogin, onClickCall, onClickMenu }) {
   
 
   return (
@@ -23,6 +23,7 @@ export default function Header({ onClickLogin, onClickCall, onClickMenu }) {
           </nav>
           <Button onClick={onClickMenu} className='header-menu-button'>Menu</Button>
           <HeaderLogin
+          loginStatus={loginStatus}
           onClickLogin={onClickLogin}
           onClickCall={onClickCall} />
         </div>
